@@ -106,6 +106,14 @@ describe('happySad', () => {
             })
             .catch(() => done(new Error('The promise is expected to resolve with happy!')));
     })
+    it('returns a promise that returns "happy" when x = 1', (done) => {
+      happySad(1)
+          .then(value => {
+              expect(value).to.equal("happy");
+              done();
+          })
+          .catch(() => done(new Error('The promise is expected to resolve with happy!')));
+  })
     it('returns a promise that returns "sad" when x < 1', (done) => {
         happySad(0)
             .catch(value => {

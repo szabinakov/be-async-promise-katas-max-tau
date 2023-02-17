@@ -30,7 +30,7 @@ Remember, a Promise can only resolve successfully, or reject when it fails to re
 
 // 1 Create a function that returns a resolving promise
 // Example:
-// when we call returnPromise like 'returnPromise()' we expect our function to use the 
+// when we call returnPromise like 'returnPromise()' we expect our function to use the
 // 'resolve' Promise callback function in order to resolve successfully
 
 const returnPromise = () => { };
@@ -77,7 +77,7 @@ const theNumberOfTheBeast = () => { };
 
 const internalServerError = () => { };
 
-// 9 Create a function that returns a promise which resolves to "happy" if the parameter is greater than 
+// 9 Create a function that returns a promise which resolves to "happy" if the parameter is greater than
 // or equal to 1 and rejects to "sad" if the value is less than 1
 // Example:
 // happySad(1) resolves to "happy"
@@ -85,7 +85,7 @@ const internalServerError = () => { };
 
 const happySad = () => { };
 
-// 10 Create a function that returns a promise which resolves to "Yes. Luke, I am your father." if the 
+// 10 Create a function that returns a promise which resolves to "Yes. Luke, I am your father." if the
 // parameter is "Luke" and rejects to "Not your dad." if the value is anything else
 // Example:
 // amIYourFather() resolves to "Yes. Luke, I am your father."
@@ -93,7 +93,7 @@ const happySad = () => { };
 
 const amIYourFather = () => { };
 
-// 11 Create a function that returns a promise. The promise should resolve to a new function that returns "My name is <input name>" 
+// 11 Create a function that returns a promise. The promise should resolve to a new function that returns "My name is <input name>"
 // Example:
 // A call to myNameIs() resolves to a new function that takes one argument, name, and returns "My name is name" Eg (name) => `My name is ${name}`
 
@@ -101,15 +101,15 @@ const myNameIs = () => { };
 
 
 module.exports = {
-    returnPromise,
-    returnTen,
-    returnString,
-    returnBob,
-    returnList,
-    anError,
-    theNumberOfTheBeast,
-    internalServerError,
-    happySad,
-    amIYourFather,
-    myNameIs
-}
+  returnPromise,
+  returnTen,
+  returnString,
+  returnBob,
+  returnList,
+  anError,
+  theNumberOfTheBeast,
+  internalServerError,
+  happySad,
+  amIYourFather,
+  myNameIs,
+};
